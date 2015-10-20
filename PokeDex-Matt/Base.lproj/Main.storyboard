@@ -40,7 +40,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="uVa-jk-Ups">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="uVa-jk-Ups" customClass="PokeCell" customModule="PokeDex_Matt" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -95,6 +95,10 @@
                                                 <exclude reference="rJ4-4g-PRK"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <outlet property="nameLbl" destination="Kuo-BV-aIz" id="1ND-0g-wkE"/>
+                                            <outlet property="thumbImg" destination="a5O-3J-kr2" id="REX-vR-sr0"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

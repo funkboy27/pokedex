@@ -17,6 +17,7 @@
 		34BD73D21BD6F7510006A41E /* PokeDex_MattUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BD73D11BD6F7510006A41E /* PokeDex_MattUITests.swift */; };
 		34BD73E01BD6FB4E0006A41E /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 34BD73DF1BD6FB4E0006A41E /* pokemon.csv */; settings = {ASSET_TAGS = (); }; };
 		34BD73E51BD6FC510006A41E /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BD73E41BD6FC510006A41E /* Pokemon.swift */; settings = {ASSET_TAGS = (); }; };
+		34BD73E71BD703290006A41E /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BD73E61BD703290006A41E /* PokeCell.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		34BD73D31BD6F7510006A41E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34BD73DF1BD6FB4E0006A41E /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 		34BD73E41BD6FC510006A41E /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		34BD73E61BD703290006A41E /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +105,8 @@
 		34BD73AD1BD6F7510006A41E /* PokeDex-Matt */ = {
 			isa = PBXGroup;
 			children = (
-				34BD73E31BD6FC110006A41E /* Views */,
 				34BD73E21BD6FC080006A41E /* Model */,
+				34BD73E31BD6FC110006A41E /* View */,
 				34BD73E11BD6FC010006A41E /* Controllers */,
 				34BD73AE1BD6F7510006A41E /* AppDelegate.swift */,
 				34BD73B01BD6F7510006A41E /* ViewController.swift */,
@@ -151,11 +153,12 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		34BD73E31BD6FC110006A41E /* Views */ = {
+		34BD73E31BD6FC110006A41E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				34BD73E61BD703290006A41E /* PokeCell.swift */,
 			);
-			name = Views;
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +299,7 @@
 				34BD73E51BD6FC510006A41E /* Pokemon.swift in Sources */,
 				34BD73AF1BD6F7510006A41E /* AppDelegate.swift in Sources */,
 				34BD73B71BD6F7510006A41E /* PokeDex_Matt.xcdatamodeld in Sources */,
+				34BD73E71BD703290006A41E /* PokeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
