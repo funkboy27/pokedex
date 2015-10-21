@@ -4,6 +4,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Pokemon Solid.ttf">
+            <string>PokemonSolidNormal</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -23,10 +28,39 @@
                             </imageView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vBE-6i-eh1">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="57"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokedex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WkZ-zl-CaR">
+                                        <rect key="frame" x="213" y="5" width="174" height="44"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="mkZ-4k-cuf"/>
+                                            <constraint firstAttribute="width" constant="174" id="v13-4w-ge1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="33"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPI-eT-IW6">
+                                        <rect key="frame" x="550" y="12" width="38" height="38"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="l2w-X4-y8O"/>
+                                            <constraint firstAttribute="width" constant="38" id="x2X-vU-BFy"/>
+                                        </constraints>
+                                        <state key="normal" image="music"/>
+                                        <connections>
+                                            <action selector="musicBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MID-M1-U3J"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="GsN-Q7-Onz"/>
+                                    <constraint firstItem="WkZ-zl-CaR" firstAttribute="centerY" secondItem="vBE-6i-eh1" secondAttribute="centerY" id="TMj-JX-WJm"/>
+                                    <constraint firstItem="BPI-eT-IW6" firstAttribute="top" secondItem="vBE-6i-eh1" secondAttribute="top" constant="12" id="UnW-D2-deJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="BPI-eT-IW6" secondAttribute="trailing" constant="8" id="XFQ-Pa-bk9"/>
+                                    <constraint firstItem="WkZ-zl-CaR" firstAttribute="centerX" secondItem="vBE-6i-eh1" secondAttribute="centerX" id="yWx-s4-xFe"/>
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fOc-la-rFt">
@@ -149,5 +183,6 @@
     <resources>
         <image name="297" width="120" height="120"/>
         <image name="bg" width="1920" height="1200"/>
+        <image name="music" width="100" height="100"/>
     </resources>
 </document>
