@@ -11,7 +11,7 @@ import Foundation
 
 class Pokemon {
     
-    private var _name: String!
+    private var _name: String
     private var _pokedexID: Int!
     
     var name: String {
